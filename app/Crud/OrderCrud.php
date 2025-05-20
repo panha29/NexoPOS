@@ -63,6 +63,7 @@ class OrderCrud extends CrudService
     public $relations = [
         [ 'nexopos_users as author', 'nexopos_orders.author', '=', 'author.id' ],
         [ 'nexopos_users as customer', 'nexopos_orders.customer_id', '=', 'customer.id' ],
+      
     ];
 
     public $pick = [
